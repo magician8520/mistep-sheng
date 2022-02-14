@@ -1,14 +1,15 @@
 name: 刷步数
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+#   push:
+#     branches: [ main ]
+#   pull_request:
+#     branches: [ main ]
   schedule:
     - cron: 0 0 * * *
-  watch:
-    types: started
+#   watch:
+#     types: started
+  workflow_dispatch:
 
 jobs:
   build:
